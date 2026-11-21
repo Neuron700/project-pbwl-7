@@ -10,8 +10,6 @@ Pengembangan Project 6 dengan **autentikasi session**, halaman terlindungi, dan 
 
 </div>
 
----
-
 ## 📖 Deskripsi
 
 `Bootstrap.php` memeriksa `$_SESSION['user_id']`: halaman `Index` dan `Auth` boleh diakses tamu, selain itu diarahkan ke `auth/login`. Password disimpan dengan `password_hash()` (bcrypt). Tabel `tb_users` ditambahkan di samping tabel akademik.
