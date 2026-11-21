@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 Sistem Akademik — Project 7
+# 🔐 Sistem Akademik Project 7
 
 **Project 7 · MVC + Login & CRUD User**
 
