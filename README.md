@@ -17,10 +17,10 @@ Pengembangan Project 6 dengan **autentikasi session**, halaman terlindungi, dan 
 ## 📸 Tampilan
 
 <table>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/01-beranda.png" alt="Beranda / Landing"><br><sub>Beranda / Landing</sub></td>
-    <td width="50%"><img src="docs/screenshots/02-login.png" alt="Halaman Login"><br><sub>Halaman Login</sub></td>
-  </tr>
+ <tr>
+ <td width="50%"><img src="docs/screenshots/01-beranda.png" alt="Beranda / Landing"><br><sub>Beranda / Landing</sub></td>
+ <td width="50%"><img src="docs/screenshots/02-login.png" alt="Halaman Login"><br><sub>Halaman Login</sub></td>
+ </tr>
 </table>
 
 ## ✨ Fitur
@@ -47,15 +47,15 @@ Pengembangan Project 6 dengan **autentikasi session**, halaman terlindungi, dan 
 
 ```mermaid
 flowchart TD
-    A[Browser] --> B[?page=auth/login]
-    B --> C[AuthController]
-    C --> D[UserModel - bcrypt]
-    D --> E[(tb_users)]
-    C --> F[set session user_id]
-    F --> G[Dashboard / Mahasiswa]
-    H[?page=mahasiswa] --> I{Bootstrap cek session}
-    I -->|tidak login| B
-    I -->|login| J[MahasiswaController]
+ A[Browser] --> B[?page=auth/login]
+ B --> C[AuthController]
+ C --> D[UserModel - bcrypt]
+ D --> E[(tb_users)]
+ C --> F[set session user_id]
+ F --> G[Dashboard / Mahasiswa]
+ H[?page=mahasiswa] --> I{Bootstrap cek session}
+ I -->|tidak login| B
+ I -->|login| J[MahasiswaController]
 ```
 
 ## 🚀 Instalasi
@@ -69,10 +69,10 @@ flowchart TD
 ```
 project7/
 ├── app/
-│   ├── core/        # Bootstrap (guard session), Controller, Model
-│   ├── controllers/ # Auth, Dashboard, User, Mahasiswa, Dosen, Matakuliah
-│   ├── models/      # User, Mahasiswa
-│   └── views/       # auth/login, user/*, dashboard, dll
+│ ├── core/ # Bootstrap (guard session), Controller, Model
+│ ├── controllers/ # Auth, Dashboard, User, Mahasiswa, Dosen, Matakuliah
+│ ├── models/ # User, Mahasiswa
+│ └── views/ # auth/login, user/*, dashboard, dll
 ├── inc/
 ├── layouts/
 ├── .htaccess
